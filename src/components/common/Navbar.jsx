@@ -25,17 +25,13 @@ function Navbar() {
                 </div>
             </Link>
 
-            {
-                token !=null && (
-                    <div className='flex flex-row items-center gap-4 text-md font-semibold'>
-                        <Link to={"/dashboard/financialliteracy"} className='hover:underline transition-all duration-200'>Financial Literacy</Link>
-                        <Link to={"/dashboard/croprecommendation"} className='hover:underline transition-all duration-200'>Crop Recommendation</Link>
-                        <Link to={"/dashboard/fertilizerguidence"} className='hover:underline transition-all duration-200'>Fertilizer Guidence</Link>
-                        <Link to={"/dashboard/loans"} className='hover:underline transition-all duration-200'>Loans</Link>
-                        <Link to={"https://statewise-yield-industry.streamlit.app/"} className='hover:underline transition-all duration-200'>Industry</Link>
-                    </div>
-                )
-            }
+            <div className='flex flex-row items-center gap-4 text-md font-semibold'>
+                <Link to={"/dashboard/financialliteracy"} className='hover:underline transition-all duration-200'>Financial Literacy</Link>
+                <Link to={"/dashboard/croprecommendation"} className='hover:underline transition-all duration-200'>Crop Recommendation</Link>
+                <Link to={"/dashboard/fertilizerguidence"} className='hover:underline transition-all duration-200'>Fertilizer Guidence</Link>
+                <Link to={"/dashboard/loans"} className='hover:underline transition-all duration-200'>Loans</Link>
+                <Link to={"https://statewise-yield-industry.streamlit.app/"} className='hover:underline transition-all duration-200'>Industry</Link>
+            </div>
 
             <div className='flex flex-row items-center gap-6'>
                 {
